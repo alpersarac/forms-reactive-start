@@ -1,12 +1,13 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <form>
+      <form [formGroup]="signupForm"]>
         <div class="form-group">
           <label for="username">Username</label>
           <input
             type="text"
             id="username"
+            formControlName="username"
             class="form-control">
         </div>
         <div class="form-group">
@@ -14,12 +15,14 @@
           <input
             type="text"
             id="email"
+            formControlName="email"
             class="form-control">
         </div>
         <div class="radio" *ngFor="let gender of genders">
           <label>
             <input
               type="radio"
+              formControlName="gender"
               [value]="gender">{{ gender }}
           </label>
         </div>
