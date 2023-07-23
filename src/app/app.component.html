@@ -12,7 +12,7 @@
             <span
             *ngIf="!signupForm.get('username').valid
             &&!signupForm.get('username').touched"
-            >Please enter a valid username</span>
+            class="help-block">Please enter a valid username</span>
         </div>
         <div class="form-group">
           <label for="email">email</label>
@@ -24,7 +24,7 @@
             <span
             *ngIf="!signupForm.get('email').valid
             &&!signupForm.get('email').touched"
-            >Please enter a valid email</span>
+            class="help-block">Please enter a valid email</span>
         </div>
         <div class="radio" *ngFor="let gender of genders">
           <label>
@@ -37,7 +37,7 @@
         <span
             *ngIf="!signupForm.get('gender').valid
             &&!signupForm.get('gender').touched"
-            >Please enter a valid data</span>
+            class="help-block">Please enter a valid data</span>
         <button class="btn btn-primary" type="submit">Submit</button>
       </form>
     </div>
