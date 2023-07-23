@@ -1,6 +1,7 @@
 .container {
   margin-top: 30px;
 }
-input.ng-valid.ng-touched{
-  border: 1px solid orangered;
+input.ng-invalid.ng-touched{
+  border: 3px solid red;
+  opacity:40%;
 }
